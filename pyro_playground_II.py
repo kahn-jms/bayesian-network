@@ -37,6 +37,8 @@ plt.style.use('default')
 # -
 
 # ## A Simple Example
+#
+# Here we build a model of our belief of the weight and the result of taking a measurement of it.
 
 def scale(guess):
     weight = pyro.sample("weight", dist.Normal(guess, 1.0))
